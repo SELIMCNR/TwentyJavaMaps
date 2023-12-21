@@ -9,11 +9,11 @@ import java.io.Serializable;
 @Entity  // roomdb'yi kullanacam demek  istenirse varsayılan tablo adıda verilebilir @Entity(tableName = "asd")
 
 public class Place implements Serializable{
-
+    //room dbli veritabanı oluşturma işlemleri
     @PrimaryKey(autoGenerate = true) // özel anahtarlı id oluştur
     public  int id ;
 
-    @ColumnInfo(name= "name") // kolon ismi
+    @ColumnInfo(name= "name") // kolon ismi 
     public  String name;
 
     @ColumnInfo(name = "latiude") //kolon ismi
